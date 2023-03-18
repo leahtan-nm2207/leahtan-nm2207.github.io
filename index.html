@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    <script defer type="text/javascript" src="appscripts/chart.js"></script>
+</head>
+
+<!--Navigation Bar-->
+<ul>
+	<li><a class="active" href="#home"><b>Home</a></b></li>
+	<li><a href="#Pet Ownership Worldwide"><b>Pet Ownership Worldwide</b></a></li>
+	<li><a href="#Pet Abandonment"><b>Pet Abandonment</b></a></li>
+	<li><a href="#What Happens After?"><b>What Happens After?</b></a></li>
+</ul>
+
+<!--Header Content-->
+<body>
+    <div class="container" id="home">
+		<header class="header">
+			<div class="header-text">
+				<h1>Furry Friends: <br>
+                    A Data Story on Pet Ownership and Pet Abandonment</h1>
+                    <span class="square"></span>
+				<p><i>This data story delves into the statistics and trends surrounding pet ownership, including factors such as <u>age, gender, and location.</u> Through <b>engaging visuals</b> and <b>informative analysis</b>, readers will gain a <u>deeper understanding of the joys and challenges of owning a furry companion</u>, as well as the <u>broader cultural and societal factors</u> that influence pet ownership.</p></i>
+			</div>
+		</header>
+	</div>
+
+<!--Pet Ownership Section-->
+	<!--Title Page-->
+	<div class="introduction" id="Pet Ownership Worldwide">
+		<div class="image-container">
+			<img class="left-image" src="images/left.png" alt="Left Image">
+				<div class="introduction-text">
+					<p><b><i>Pet Ownership Worldwide</p></b></i>
+				</div>
+			<img class="right-image" src="images/right.png" alt="Right Image">
+		</div>
+	</div>
+	
+	<!--Pet Ownership in US and SG-->
+	<div class="middle1">
+		<div class="middle1-text" style="text-align:left;">
+			<h1>Many people around the world own pets! </h1>
+			<h2><i>Click the button to see the breakdown of pet ownership in the US and in Singapore:</i></h2>
+			<div class="population-chart-container"></div>
+				<canvas id="populationChart"></canvas>
+				<button id="populationButton" onclick="toggleData()">Toggle Data</button>
+		</div>
+	</div>
+
+	<!--Pet Ownership Demographics-->
+	<div class="container">
+		<div class="container2">
+			<img src="images/benji.png" alt="Image on the Left" width="475" height="400">
+			<div class ="generation-gender-text-container">
+			  	<p><b>Did You Know?</b></p>
+			  		<div class="generation-gender-container">
+						<canvas id="generationChart" ></canvas>
+						<canvas id="genderChart" ></canvas>
+					</div>
+			</div>
+		</div>
+	</div>
+
+<!--Pet Abandonment Section-->
+	<!--Title Page-->
+	<div class="container">
+		<div class="container3">
+	<div class="middle2" id="Pet Abandonment">
+		<div class="middle2-text" style="text-align:center;">
+			<h1><b><i>About Pet Abandonment</i></b> </h1>
+		</div>
+	</div>
+
+	<!--Pet Abandonment Statistics-->
+	<div class="middle3">
+		<div class="middle3-text" style="text-align:center;">
+			<p><b><i>The reasons for Pet abandonment and the number of pets that are abandoned each year</i></b></p>
+		<div class="reasons-number-chart-container">
+			<div class="reasonschart">
+			  <canvas id="reasonsChart"></canvas>
+			</div>
+			<div class="numberchart">
+			  <canvas id="numberChart"></canvas>
+			</div>
+		</div>
+	</div>
+
+<!--What happens after Section-->
+	<div class="middle4" id="What Happens After?">
+		<div class="middle4-text" style="text-align:left;">
+			<div class="container4">
+				<p><b><i>What Happens After?</i></b></p>
+				<img src="images/hamster.png" alt="Image on the Right" width="600" height="450">
+			</div>
+		</div>
+	</div>
+
+	<!--Pet Shelter Statistics-->
+	<div class="container">
+		<div class="container6">
+			<div class="shelter-chart-container">
+				<canvas id="shelterChart"></canvas>
+			</div>
+		</div>
+	</div>
+
+	<!--Rehome and Volunteer Statistics-->
+	<div class="container">
+		<div class="container7">
+			<div class="rehome-chart-container">
+				<canvas id="rehomeChart"></canvas>
+				<button id="rehomeButton" onclick="toggleSecondLine()">Toggle Second Line</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
