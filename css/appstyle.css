@@ -254,3 +254,18 @@ ul {
 #rehomeButton:hover {
   background-color: #b44981;
 }
+
+/*Project Submission*/
+.middle3 {
+  background-color: #FBD6DB;
+  height:510px;
+}
+
+.middle5-text {
+  font-size: 20px;
+  padding:40px;
+}
+
+.container8{
+  background-color: #FBD6DB;
+}
