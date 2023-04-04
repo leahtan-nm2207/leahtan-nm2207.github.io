@@ -6,7 +6,7 @@
     datasets: [
       {
         data: [300, 50, 100],
-        backgroundColor: ["#B44981", "#FFA0DC", "#FFFEF4"],
+        backgroundColor: ["#B44981", "#EFBFD8", "#FFFEF4"],
         borderWidth:0,
       },
     ],
@@ -20,7 +20,7 @@
     datasets: [
       {
         data: [100, 150, 200],
-        backgroundColor: ["#FFA0DC", "#FFFEF4", "#B44981"],
+        backgroundColor: ["#EFBFD8", "#FFFEF4", "#B44981"],
         borderWidth:0,
       },
     ],
@@ -69,8 +69,8 @@
           {
             label: "Pet Ownership by Generation",
             data: [14, 32, 24, 27, 3],
-            backgroundColor: "#ffd26b",
-            borderColor: "#ffd26b",
+            backgroundColor: "#EFBFD8",
+            borderColor: "#EFBFD8",
             borderWidth: 1,
           },
         ],
@@ -179,19 +179,19 @@
       {
         label: "Dogs",
         data: [12, 19, 3, 5, 2],
-        backgroundColor: "#0C6980",
-        borderColor: "#0C6980",
+        backgroundColor: "#385B4F",
+        borderColor: "#385B4F",
         fill: false,
-            borderColor: "#0C6980",
+            borderColor: "#385B4F",
             tension: 0.1,
       },
       {
         label: "Cats",
         data: [5, 7, 2, 10, 15],
-        backgroundColor: "#5BADAD",
-        borderColor: "#5BADAD",
+        backgroundColor: "#C5DFC9",
+        borderColor: "#C5DFC9",
         fill: false,
-            borderColor: "#5BADAD",
+            borderColor: "#C5DFC9",
             tension: 0.1,
 
       }
@@ -224,7 +224,7 @@
         label: "Successfully Rehomed Pets",
         data: [65, 59, 80, 81, 56, 55, 40],
         fill: false,
-        borderColor: "rgb(75, 192, 192)",
+        borderColor: "#385B4F",
         tension: 0.1,
       },
     ],
@@ -252,7 +252,7 @@
         label: "Euthanized Abandoned Pets",
         data: [28, 48, 40, 19, 86, 27, 90],
         fill: false,
-        borderColor: "rgb(255, 99, 132)",
+        borderColor: "#C5DFC9",
         tension: 0.1,
       });
       secondLineAdded = true;
