@@ -1,0 +1,361 @@
+/*General Styling*/
+* {
+  font-family: sans-serif
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3{
+  font-size:25px;
+  text-align: center;
+}
+
+h4{
+  font-size: 25px;
+  margin-top:-5px;
+}
+
+h5{font-size:45px;
+}
+
+.square {
+  margin-top: 60px;
+}
+
+.container {
+  width: 100%;
+  height: 510px;
+  margin:0px;
+  padding:0px;
+}
+
+/*Navigation Bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f3f3f3;
+}
+  
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+  
+li a.active {
+  color: white;
+  background-color: #b44981;
+}
+
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*Header Styling*/
+.container-1 {
+  background-image: url("https://nm2207.org/2223S2/e0773376/web/background.png");
+  background-size: cover;
+  height: 510px;
+  display: flex;
+  align-items: center;
+
+}
+
+.container-1-text {
+  max-width: 40%;
+  margin-left: 70px;
+  font-size: 20px;
+}
+
+/*Pet Ownership*/
+.image-container-2 {
+  background: #fffef4;
+  height:500px;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.left-image{
+  width: 250px;
+  height: 500px;
+}
+
+.container-2-text {
+  background: #fffef4;
+  font-size: 50px;
+  padding: 100px;
+  text-align: center;
+  margin-top:-10px;
+  margin-left: 100px;
+}
+
+.right-image {
+  width: 375px;
+  height:500px;
+}
+
+/*Information*/
+.container-3{
+  background-color: #ffd26b;
+  height:600px;
+}
+
+.container-4{
+  background-color: #ffd26b;
+  height:600px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 50px;
+  height:400px;
+  width:500px;
+  margin-left:80px;
+}
+
+.content {
+  background-color: #F8F8F8;
+  padding: 10px;
+  border-radius:10px;
+}
+
+/*Pet Ownership in US and SG*/
+.container-5{
+  background-color: #FAECEE;
+  height:510px;
+}
+
+.container-5-text {
+  max-width: 100%;
+  margin-left: 70px;
+  font-size: 10px;
+  padding: 20px;
+  text-align: right;
+}
+
+.population-chart-container {
+  height:20px;
+  width:20px;
+}
+
+#populationButton {
+  background-color: #EFBFD8;
+  color: black; 
+  padding: 12px; 
+  border: none; 
+  cursor: pointer; 
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#populationButton:hover {
+  background-color: #b44981;
+}
+
+/*Pet Ownership Demographics*/
+.container-6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size:50px;
+  background-color: #FAECEE;
+}
+
+.generation-gender-container {
+  width: 300px;
+  height: 300px;
+  margin-right:400px;
+  margin-top:25px;
+  display: flex;
+}
+
+.generation-gender-text-container {
+  font-size: 40px;
+}
+
+/*Pet Abandonment Title*/
+.container-7{
+  background-color: #88a9c3;
+}
+
+.container-7-text {
+  text-align:center;
+}
+
+.container-8{
+  background-color: #E3EBF2;
+  height:600px;
+}
+
+/*Pet Abandonment Statistics*/
+.container-9{
+  background-color:#E3EBF2;
+}
+
+.container-9-text {
+  font-size: 20px;
+  font-weight: bold;
+  padding:40px;
+}
+.reasons-number-chart-container{
+  margin-top: 10px;
+  display: flex;
+}
+
+.reasonschart {
+  width: 50%;
+}
+
+.numberchart{
+  width: 50%;
+}
+
+/*Pet abuse information*/
+.container-10{
+  background-color: #0C6980;
+  height:600px;
+}
+
+/*Pet abuse map*/
+.container-11{
+  background-color: #0C6980;
+  height: 510px;
+}
+
+/*What happens after*/
+.container-12 {
+  background-color: #D5E4D7;
+  height:510px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.container-12-text{
+  text-align:left;
+}
+
+.container-13{
+  background-color: #D5E4D7;
+  height:600px;
+}
+
+
+/*Shelter*/
+.container-14{
+  background-color: #ffff;
+  height:510px;
+}
+
+.shelter-chart-container {
+  height:800px;
+  width:800px;
+  padding:30px;
+  margin-left:100px;
+}
+
+/*Rehome + Volunteer*/
+.container-15{
+  background-color: #ffff;
+  height:510px;
+}
+
+.rehome-chart-container {
+  margin-left: 400px;
+  height:800px;
+  width:800px;
+  padding:10px;
+}
+
+#rehomeButton {
+  background-color: #C5DFC9;
+  color: black; 
+  padding: 12px; 
+  border: none; 
+  cursor: pointer; 
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#rehomeButton:hover {
+  background-color: #385B4F;
+}
+
+/*END*/
+.container-16{
+  background-color: #385b4f;
+  height:600px;
+  margin:0px;
+  padding:0px;
+  display:flex;
+  flex-direction:row;
+}
+
+.image-container-16{
+  flex:1;
+}
+
+.container-16-text{
+  background-color: #385b4f;
+  flex:1;
+}
+
+.whiteform {
+  background-color:#ffff;
+  border-radius: 10px;
+  height:400px;
+  width:550px;
+  margin-top:50px;
+  padding:50px;
+  text-align:left;
+}
+
+form{
+  font-family:sans-serif;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+
+
+/*Project submission*/
+.container-17{
+  background-color: #ffff;
+  height:510px;
+  margin-top:-23px;
+  padding:0px;
+}
