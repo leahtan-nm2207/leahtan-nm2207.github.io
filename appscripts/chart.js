@@ -67,8 +67,8 @@
         labels: ["GenZ", "Millenial", "GenX", "Baby Boomer", "Builder"],
         datasets: [
           {
-            label: "Pet Ownership by Generation",
-            data: [14, 32, 24, 27, 3],
+            label: "Pet Ownership by Generation (%)",
+            data: [16, 33, 25, 24, 32],
             backgroundColor: "#EFBFD8",
             borderColor: "#EFBFD8",
             borderWidth: 1,
@@ -82,7 +82,7 @@
         labels: ["Female", "Male"],
         datasets: [
           {
-            label: "Pet Ownership by Gender",
+            label: "Pet Ownership by Gender (%)",
             data: [60, 40,0],
             backgroundColor: "#b44981",
             borderColor: "#b44981",
@@ -92,7 +92,6 @@
       };
 
 // data will be retrieved from https://www.statista.com/statistics/1320617/singapore-pet-ownership-rate-by-gender/
-//^^ given that the data given also indicates the option "I used to but not anymore", I am considering changing the graph and its layout to incorporate that in
 
 
       // Create generation chart
@@ -122,7 +121,7 @@
     labels: ["Finance", "Boredom", "Covid"],
     datasets: [
       {
-        label: "Reasons for pet abandonment",
+        label: "Top Three Reasons for Pet Abandonment in 2020",
         data: [300, 50, 100],
         backgroundColor: ["#1F628E", "#0C6980", "#88A9C3"],
         borderWidth:0,
@@ -137,6 +136,10 @@
     type: "doughnut",
     data: chart4Data,
     options: {
+      title: {
+        display: true,
+        text: 'Top Three Reasons for Pet Abandonment in 2020'
+    }
     },
   });
 
@@ -169,7 +172,12 @@
               ticks: {
                 beginAtZero: true,
               },
-            },}}
+            },},
+          title: {
+            display: true,
+            text: 'Number of Abandoned Pets from 2019-2022'
+          }
+          }
   });
   
   // Define the data for number of pets entering shelters
@@ -212,18 +220,24 @@
               ticks: {
                 beginAtZero: true,
               },
-            },}}
+            },},
+          title: {
+              display: true,
+              text: 'Number of Pets Entering Shelters from 2015-2019'
+          }
+          }
   });
 
 
     // Define the data for rehomed pets
    var chart7Data = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    labels: ["2021", "2022", "2023"],
     datasets: [
       {
-        label: "Successfully Rehomed Pets",
-        data: [65, 59, 80, 81, 56, 55, 40],
+        label: "Successfully Rehomed Pets (%)",
+        data: [64, 66, 65],
         fill: false,
+        backgroundColor: "#385B4F",
         borderColor: "#385B4F",
         tension: 0.1,
       },
@@ -233,29 +247,39 @@
 
   // Create the chart
   var rehomeChart = new Chart("rehomeChart", {
-    type: "line",
+    type: "bar",
     data: chart7Data,
-  });
+    options: {
+      title: {
+        display: true,
+        text: 'Number of Successfully Rehomed Pets from 2021-2023',
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true}}]
+    }
+    }}});
 
-  var secondLineAdded = false;
+  var secondBarAdded = false;
 
   // Function to toggle the second line on the chart
-  function toggleSecondLine() {
+  function toggleSecondBar() {
     // If second line has already been added, remove it using pop()
-    if (secondLineAdded) {
+    if (secondBarAdded) {
       chart7Data.datasets.pop();
-      secondLineAdded = false;
+      secondBarAdded = false;
     }
     // If second line has not been added, add it using push()
     else {
       chart7Data.datasets.push({
-        label: "Euthanized Abandoned Pets",
-        data: [28, 48, 40, 19, 86, 27, 90],
+        label: "Euthanized Abandoned Pets (%)",
+        data: [6, 6, 8],
         fill: false,
+        backgroundColor: "#C5DFC9",
         borderColor: "#C5DFC9",
         tension: 0.1,
       });
-      secondLineAdded = true;
+      secondBarAdded = true;
     }
 // data retrieved from https://www.shelteranimalscount.org/industry-trends-dashboard/
 
@@ -263,11 +287,11 @@
     rehomeChart.update();
 
     // Toggle the button text
-    var rehomeButton = document.getElementById("toggleLineButton");
-    if (secondLineAdded) {
-        rehomeButton.innerText = "Remove Second Line";
+    var rehomeButton = document.getElementById("toggleBarButton");
+    if (secondBarAdded) {
+        rehomeButton.innerText = "Remove Second Bar";
       } else {
-        rehomeButton.innerText = "Add Second Line";
+        rehomeButton.innerText = "Add Second Bar";
       }
   }
 

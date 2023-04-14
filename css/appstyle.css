@@ -17,11 +17,29 @@ h2 {
 
 h3{
   font-size:25px;
+  text-align: center;
 }
 
 h4{
   font-size: 25px;
   margin-top:-5px;
+}
+
+h5{font-size:45px;
+}
+
+h6{font-size: 20px;
+  color: white;
+  margin-left:815px;
+  margin-top:30px;
+position:absolute;}
+
+h7{font-size: 30px;
+  color: white;
+  margin-left:50px;
+  margin-top:10px;
+  font-family:sans-serif;
+  position: absolute;
 }
 
 .square {
@@ -42,10 +60,12 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #f3f3f3;
+  z-index: 1000;
 }
   
 li {
   float: left;
+  z-index: 1000;
 }
 
 li a {
@@ -54,21 +74,25 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  z-index: 1000;
 }
   
 li a:hover:not(.active) {
   background-color: #ddd;
+  z-index: 1000;
 }
   
 li a.active {
   color: white;
   background-color: #b44981;
+  z-index: 1000;
 }
 
 ul {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 /*Header Styling*/
@@ -139,7 +163,23 @@ ul {
   margin-left:80px;
 }
 
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 50px;
+  height:400px;
+  width:400px;
+  margin-right:30px;
+  margin-top:50px;
+}
+
 .content {
+  background-color: #F8F8F8;
+  padding: 10px;
+  border-radius:10px;
+}
+
+.content2 {
   background-color: #F8F8F8;
   padding: 10px;
   border-radius:10px;
@@ -225,7 +265,7 @@ ul {
   padding:40px;
 }
 .reasons-number-chart-container{
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
 }
 
@@ -239,15 +279,46 @@ ul {
 
 /*Pet abuse information*/
 .container-10{
-  background-color: #0C6980;
-  height:600px;
+  background-color: #E3EBF2;
+  height:510px;
+}
+
+.abuse-bar-container {
+  float:left;
+}
+
+.chart-description {
+  float: right;
+  margin-left: 20px;
+  text-align:left;
 }
 
 /*Pet abuse map*/
 .container-11{
-  background-color: #0C6980;
-  height: 510px;
+  background-color: #4F6C84;
+  height: 560px;
 }
+
+.abuse-map-container{display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.legend {
+  line-height: 18px;
+  color: #555;
+  background-color: white;
+  border-radius: 5px;
+}
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
 
 /*What happens after*/
 .container-12 {
@@ -310,7 +381,7 @@ ul {
 }
 
 /*END*/
-.container-16{
+.container-17{
   background-color: #385b4f;
   height:600px;
   margin:0px;
@@ -319,11 +390,11 @@ ul {
   flex-direction:row;
 }
 
-.image-container-16{
+.image-container-17{
   flex:1;
 }
 
-.container-16-text{
+.container-17-text{
   background-color: #385b4f;
   flex:1;
 }
@@ -349,7 +420,7 @@ button[type="submit"] {
 
 
 /*Project submission*/
-.container-17{
+.container-18{
   background-color: #ffff;
   height:510px;
   margin-top:-23px;
